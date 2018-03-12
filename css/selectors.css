@@ -26,3 +26,9 @@ input[type="submit"] {
     cursor: pointer; 
     /* Now the mouse icon turns into a little hand icon! Cute! */
 }
+
+a[target="_blank"]{
+    color: #39add1;
+    text-decoration: none; /* To remove the  outdated underline */
+    border-bottom: 1px dotted;
+}
