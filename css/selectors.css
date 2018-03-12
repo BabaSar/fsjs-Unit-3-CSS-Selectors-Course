@@ -1,6 +1,28 @@
 /* Attribute Selectors ------------- */
 
 /* This just selects anything with a class, even if the values are different */
-[class] {
+/* [class] {
     color: red;
+} */
+
+.form-contact {
+    padding: 20px 24px;
+    background: #f4f7f8;
+}
+
+#container{
+    max-width: 500px;
+    margin: auto;
+}
+
+/* input element with type attribute of text */
+input[type="email"]{
+    background: #fdfee6;
+}
+
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    cursor: pointer; 
+    /* Now the mouse icon turns into a little hand icon! Cute! */
 }
