@@ -1,2 +1,6 @@
 /* Attribute Selectors ------------- */
 
+/* This just selects anything with a class, even if the values are different */
+[class] {
+    color: red;
+}
