@@ -20,15 +20,80 @@ input[type="email"]{
     background: #fdfee6;
 }
 
-input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-    cursor: pointer; 
-    /* Now the mouse icon turns into a little hand icon! Cute! */
-}
+
+
 
 a[target="_blank"]{
     color: #39add1;
-    text-decoration: none; /* To remove the  outdated underline */
-    border-bottom: 1px dotted;
+    text-decoration: none; /* To remove any text decortion e.g underline, overline etc */
+    /* border-bottom: 1px dotted; */
+}
+
+/* DRY Classes ------------- */
+
+.br {
+    border-radius: 5em;
+}
+
+.avatar{
+    display: block;
+    margin: 0 auto 2em;
+}
+
+.rounded{
+    border-radius: 50%;
+}
+
+/* input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+    cursor: pointer; 
+} */
+
+/* The above can also be written as: */
+
+.btn{
+    cursor: pointer; 
+    font-size: .875em;
+    font-weight: 400;
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-transform: uppercase;
+}
+
+/* hover psuedo class */
+.btn:hover{
+    opacity: .75;
+}
+
+.default {
+    background-color: #52bab3;
+}
+
+.error{
+    background-color: #ff784f;
+}
+
+/* If device is greater than or equal to, then do the following */
+@media (min-width: 769px){
+    .inln {
+        width: auto;
+        display: inline-block;
+    }
+
+    .btn + .btn {
+        margin-left: 20px;
+    }
+}
+
+/* Cominators -------------------- */
+
+form > a {
+    font-size: .7em;
+}
+
+h1 ~ label {
+    /* targets any label element that is a sibling of a h1 */
+    background: tomato;
 }
